@@ -27,7 +27,7 @@ myButton.onclick = () => {
 function setUserName() {
 	const myName = prompt("Please enter your name.");
 	if (!myName) {
-		setUserName();
+		Heading.textContent = "Don't you just love airplanes?";
 	} else {
 		localStorage.setItem("name", myName);
 		Heading.textContent = `Don't you just love paper airplanes, ${myName}?`;
